@@ -124,8 +124,3 @@ def edit():
 
     except Exception as e:
         return jsonify({"Error => ": str(e)})
-
-
-if __name__ == '__main__':
-    encode_images()
-    app.run(host='0.0.0.0', port=8080)
