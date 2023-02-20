@@ -29,7 +29,9 @@ def encode_images():
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         encode = face_recognition.face_encodings(img)[0]
         encodeListKnown.append(encode)
-    print("encoding comp")    
+    print("encoding comp")
+    
+encode_images()
 
 @app.route("/predict", methods=["POST", "GET"])
 def predict():
